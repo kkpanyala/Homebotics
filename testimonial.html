@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebotics - Meet the Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --pink: #bf23ff;
+            --purple: #65029b;
+            --gold: #ab8a17;
+            --grey: #d4d1d1;
+        }
+
+        #home {
+            display: flex;
+            text-decoration: none;
+            font-family: "Michroma", sans-serif;
+            color: black;
+            padding-left: 2rem;
+            transition: .25s;
+        }
+
+        #home:hover {
+            cursor: default;
+        }
+
+        #home h1:hover {
+            transition: .25s;
+            cursor: pointer;
+            text-decoration: underline;
+            color: var(--pink);
+        }
+
+        .people {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin: 0 auto;
+            padding: 1rem 0 2rem;
+            line-height: 1.7;
+            max-width: 1200px;
+        }
+
+        .person {
+            display: flex;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            width: clamp(280px, 25vw, 90vw);
+            min-height: 50vh;
+            height: auto;
+            box-shadow: -5px 5px 20px var(--grey);
+            transition: .25s;
+        }
+
+        .person img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin-top: auto;
+        }
+
+        .person p {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .person > div {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2, h3, h4 {
+            font-family: "Michroma", sans-serif;
+            color: var(--gold);
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: none;
+            width: 100%;
+            min-height: 100vh;
+            margin-bottom: 1rem;
+            padding: 2rem 1rem 0.4rem;
+            border-bottom: 1px solid var(--grey);
+            transition: none;
+        }
+
+        .about h1 {
+            margin-bottom: 2rem;
+            font-family: "Michroma", sans-serif;
+            color: var(--purple);
+        }
+
+        .about h3 {
+            font-family: "Michroma", sans-serif;
+            margin-bottom: 1.1rem;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #222;
+            margin-bottom: 1.25rem;
+        }
+
+        .about:hover {
+            box-shadow: 0 0 0 black;
+        }
+
+        .about button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            background: linear-gradient(to top, var(--grey) 0%, transparent 100%);
+            border-bottom: 2px solid #dadada;
+            border-radius: 10px;
+            color: grey;
+            font-weight: bolder;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 1.5rem 1rem 2rem;
+                min-height: auto;
+            }
+
+            .about div {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .about h1 {
+                font-size: 2rem;
+            }
+
+            .about h3,
+            .about h4,
+            .about p {
+                text-align: left;
+            }
+
+            .people {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem 0 2rem;
+            }
+
+            .person {
+                width: 100%;
+                min-height: auto;
+                padding: 1rem;
+            }
+
+            .person > div {
+                gap: 1rem;
+            }
+
+            .person img {
+                width: 100%;
+                max-height: 240px;
+                object-fit: cover;
+            }
+
+            .person h2 {
+                font-size: 1.4rem;
+            }
+
+            .person h4 {
+                font-size: 1rem;
+            }
+
+            #home {
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home"><h1>Homebotics</h1></a>
+    <main class="people">
+        <section class="person" id="aisha" data-aos="fade-up">
+            <div>
+                <h2>Aisha Raman</h2>
+                <h4>“Daily chores went from overwhelming to effortless.”</h4>
+                <p>Before our Neo I arrived, we spent hours every evening cleaning and cooking, and it drained our energy. Now the robot handles everything from sweeping to prepping dinner, giving us back nearly 10 hours a week. I didn’t expect it to feel this natural having a humanoid robot around, but it’s become part of our routine. We finally get to enjoy our evenings together instead of rushing through chores</p><br/>
+            </div>
+        </section>
+        <section class="person" id="miguel" data-aos="fade-up">
+            <div>
+                <h2>Miguel Alvarez</h2>
+                <h4>“It saved us from expensive repair calls.”</h4>
+                <p>I used to dread calling repair services for every small issue, and the costs added up fast. After getting the Phantom II, it fixed a minor leak in minutes and now handles routine maintenance without me lifting a finger. We’ve cut our repair expenses by over 40% in just three months. It feels like having a skilled helper on standby at all times.</p><br/>
+                <img src="images/robot/miguel.png" alt="Miguel Alvarez and his robot">
+            </div>
+        </section>
+        <section class="person" id="grace" data-aos="fade-up">
+            <div>
+                <h2>Grace Whitmore</h2>
+                <h4>“My mother feels safe and independent again.”</h4>
+                <p>Before we bought the Nova Sigma III, my mom struggled with daily tasks and felt unsafe living alone. The robot now cooks, helps with laundry, and even patrols the house at night, giving her confidence and giving us peace of mind. She says it’s like having a gentle, reliable companion who never gets tired. Her independence has increased more than we imagined.</p><br/>
+                <img src="images/robot/grace.png" alt="Grace's mom and the Nova Sigma III">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/BigLogo.png" alt="logo">
+        <p>&copy; 2026 Homebotics. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="privpol.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true,
+                offset: 200,
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true,
+                offset: 200,
+            });
+        });
+
+        function scrollToTabs(event) {
+            document.querySelector('.people').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -186,7 +186,7 @@ body {
     transform: translateY(0);
 }
 
-.order, .about {
+.order, .about, .testimonial {
     display: flex;
     justify-content: space-between;
     width: 80vw;
@@ -199,7 +199,7 @@ body {
     transition: .25s;
 }
 
-.order:hover, .about:hover {
+.order:hover, .about:hover, .testimonial:hover {
     box-shadow: 0 5px 50px var(--gold);
     transition: .25s;
 }
