@@ -81,6 +81,7 @@ body {
     border: none;
     background: linear-gradient(to top, var(--grey) 0%, transparent 100%);
     border-bottom: 2px solid #dadada;
+    font-family: "Michroma", sans-serif;
     border-radius: 10px;
     color: grey;
     font-weight: bolder;
