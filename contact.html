@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebotics - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --pink: #bf23ff;
+            --purple: #65029b;
+            --gold: #ab8a17;
+            --grey: #d4d1d1;
+        }
+
+        #home {
+            display: flex;
+            text-decoration: none;
+            font-family: "Michroma", sans-serif;
+            color: black;
+            padding-left: 2rem;
+            transition: .25s;
+        }
+
+        #home:hover {
+            cursor: default;
+        }
+
+        #home h1:hover {
+            transition: .25s;
+            cursor: pointer;
+            text-decoration: underline;
+            color: var(--pink);
+        }
+
+        #content h1 {
+            font-family: "Michroma", sans-serif;
+            color: var(--gold);
+        }
+
+        h2, h3, h4 {
+            font-family: "Michroma", sans-serif;
+            color: var(--gold);
+        }
+
+        #content {
+            padding: 2rem;
+            margin: 2rem auto;
+            line-height: 1.7;
+            width: min(92vw, 960px);
+            max-width: 960px;
+            min-height: auto;
+        }
+
+        #content iframe {
+            width: 100%;
+            height: 420px;
+            max-width: 100%;
+            border: 0;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+
+        #content a {
+            color: var(--purple);
+            text-decoration: none;
+        }
+
+        #content a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            #home {
+                padding-left: 1rem;
+            }
+
+            #content {
+                padding: 1.25rem;
+                margin: 1rem auto;
+                width: min(96vw, 100%);
+            }
+
+            #content h1 {
+                font-size: 2rem;
+            }
+
+            #content p,
+            #content li,
+            #content div {
+                font-size: 1rem;
+            }
+
+            #content iframe {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home"><h1>Homebotics</h1></a>
+    <div id="content">
+        <h1>Contact Homebotics</h1>
+        <p>Questions, orders, or product support? <a href="https://forms.gle/MPv15kcYkU9yPj7L6" target="_blank">Reach out to the Homebotics team</a> and we’ll connect you with the right person.</p>
+
+        <h3>Business Location</h3>
+        <p>196 Summerhill Drive, Morris Plains, New Jersey, 07950</p>
+        <div><h4>Hours: </h4> 9:00 AM-5:00 PM ET | Mondays-Fridays</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12071.316698450051!2d-74.51394227581001!3d40.853674174155564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a0b39577e489%3A0x798d830f935de3c1!2s196%20Summerhill%20Dr%2C%20Morris%20Plains%2C%20NJ%2007950!5e0!3m2!1sen!2sus!4v1779163754025!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Our Emails</h3>
+        <ul>
+            <li><a href="mailto:arath27@mhrd.org">arath27@mhrd.org</a> — Arghya Rath</li>
+            <li><a href="mailto:odagadgunde27@mhrd.org">odagadgunde27@mhrd.org</a> — Om Dagadgunde</li>
+            <li><a href="mailto:yiyer27@mhrd.org">yiyer27@mhrd.org</a> — Yashraj Iyer</li>
+            <li><a href="mailto:kpanyala27@mhrd.org">kpanyala27@mhrd.org</a> — Krishna Kaushik Panyala</li>
+        </ul> 
+    </div>
+
+    <footer>
+        <img src="images/BigLogo.png" alt="logo">
+        <p>&copy; 2026 Homebotics. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="privpol.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
