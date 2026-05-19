@@ -16,14 +16,22 @@
         }
 
         #home {
+            display: flex;
             text-decoration: none;
             font-family: "Michroma", sans-serif;
             color: black;
+            padding-left: 2rem;
             transition: .25s;
         }
 
         #home:hover {
+            cursor: default;
+        }
+
+        #home h1:hover {
             transition: .25s;
+            cursor: pointer;
+            text-decoration: underline;
             color: var(--pink);
         }
     </style>

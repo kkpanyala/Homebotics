@@ -190,7 +190,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80vw;
-    height: 10vh;
+    min-height: 10vh;
     border-radius: 12px;
     border: 2px solid black;
     margin-bottom: 1rem;
