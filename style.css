@@ -228,7 +228,6 @@ footer {
     color: white;
     text-align: center;
     position: relative;
-    scroll-snap-align: start;
     z-index: 10;
 }
 

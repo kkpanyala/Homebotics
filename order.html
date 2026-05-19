@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebotics - Robots</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --pink: #bf23ff;
+            --purple: #65029b;
+            --gold: #ab8a17;
+            --grey: #d4d1d1;
+        }
+
+        #home {
+            display: flex;
+            text-decoration: none;
+            font-family: "Michroma", sans-serif;
+            color: black;
+            padding-left: 2rem;
+            transition: .25s;
+        }
+
+        #home:hover {
+            cursor: default;
+        }
+
+        #home h1:hover {
+            transition: .25s;
+            cursor: pointer;
+            text-decoration: underline;
+            color: var(--pink);
+        }
+
+        .robots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1rem;
+            margin: 0 auto;
+            min-height: auto;
+        }
+
+        .robot {
+            display: flex;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            width: clamp(280px, 33vw, 100%);
+            min-height: auto;
+            height: auto;
+            box-shadow: -5px 5px 20px var(--grey);
+            line-height: 1.7;
+            transition: .25s;
+        }
+
+        .robot img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin-top: auto;
+        }
+
+        .robot p {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .robot > div {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        h2, h3, h4 {
+            font-family: "Michroma", sans-serif;
+            color: var(--gold);
+        }
+
+        #intro {
+            margin-top: 2rem;
+            margin-left: 2rem;
+            line-height: 1.7;
+            max-width: 1200px;
+        }
+
+        @media (max-width: 768px) {
+            #intro {
+                margin: 1rem;
+                padding: 0;
+            }
+
+            .robots {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0.5rem 1rem 1.5rem;
+            }
+
+            .robot {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .robot img {
+                width: 100%;
+                max-height: 220px;
+                object-fit: cover;
+            }
+
+            .robot ul {
+                padding-left: 1.25rem;
+                margin-top: 0.5rem;
+            }
+
+            #home {
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home"><h1>Homebotics</h1></a>
+    <div id="intro">
+        <p>All of our robots have the following features:</p>
+        <ul>
+            <li>Operate autonomously for 5 hours on a single battery charge.</li>
+            <li>Utilize advanced AI/ML pipelines to actively learn, adapt to, and navigate a variety of houssehold environments.</li>
+            <li>Can easily accomplish repetitive tasks.</li>
+            <li>Backed by the warranty and maintenance services to repair malfunctions and maximize hardware longevity.</li>
+        </ul>
+        <h3>Any additional subscriptions for advanced modules such as cooking and laundry are an additional $15 a month.</h3>
+    </div>
+    <main class="robots">
+        <section class="robot" id="arg" data-aos="fade-up">
+            <div>
+                <h2>NEO I</h2>
+                <h4>Price: $26,500</h4>
+                <p>Focuses on baseline practical household chores, such as autonomous floor cleaning and routine tidying.</p>
+                <ul>
+                    <li>AI/ML pipeline to safely map, learn, and seamlessly navigate around furniture, pets, and family members.</li>
+                    <li>5-hour continuous operation.</li>
+                    <li>Optimized for automated floor care, deep sweeping, and vacuuming.</li>
+                    <li>Contains advanced modules like cooking and laundry.</li>
+                </ul>
+
+                <img src="images/robot/cleaning.png" alt="Arghya Rath">
+            </div>
+        </section>
+        <section class="robot" id="om" data-aos="fade-up">
+            <div>
+                <h2>PHANTOM II</h2>
+                <h4>Price: $40,000</h4>
+                <p>All of NEO I including...</p><br/>
+                <ul>
+                    <li>Eqipped with localized moisture and structural sensors to detect, isolate, and actively patch pipe or appliance leaks.</li>
+                    <li>Upgraded high-torque actuators and enhanced vertical spatial orientation, allowing it to navigate stairs and lift heavier household items easily.</li>
+                    <li>Rugged interior chassis engineered to withstand rigorous daily wear and tear.</li>
+                </ul>
+
+                <img src="images/robot/plumbing.png" alt="Arghya Rath">
+            </div>
+        </section>
+        <section class="robot" id="yj" data-aos="fade-up">
+            <div>
+                <h2>NOVA SIGMA III</h2>
+                <h4>Price: $55,000</h4>
+                <p>All of PHANTOM II including...</p><br/>
+                <ul>
+                    <li><b>24/7 Smart Securtiy Matrix:</b> Actively patrols you perimeter for vulnerabilities.</li>
+                    <li><b>Tactical Autonomous Defense:</b> The robot is programmed to execute non-lethal, basic physical self-defense protocols.</li>
+                    <li><b>Instant Police Uplink:</b> The robot bypasses standard alarms during emergencies and immediately broadcasts the situtation to locla police officers.</li>
+                </ul>
+
+                <img src="images/robot/security.png" alt="Arghya Rath">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/BigLogo.png" alt="logo">
+        <p>&copy; 2026 Homebotics. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privpol.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true,
+                offset: 200,
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
