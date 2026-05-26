@@ -15,3 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function scrollToTabs(event) {
     document.querySelector('.section-wrapper').scrollIntoView({ behavior: 'smooth' });
 }
+
+if (!localStorage.getItem("dscShown")) {
+    document.getElementById("disclaimer").style.display = "block";
+}
+
+// Close button logic
+document.getElementById("closeDsc").onclick = function () {
+    document.getElementById("disclaimer").style.display = "none";
+    localStorage.setItem("dscShown", "true");
+};
