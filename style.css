@@ -89,6 +89,29 @@ body {
     transition: .2s;
 }
 
+.order-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 12px 22px;
+    font-family: "Michroma", sans-serif;
+    font-size: 1.1rem;
+    background: linear-gradient(to top, var(--grey) 0%, transparent 100%);
+    border: 2px solid #dadada;
+    border-radius: 10px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+    text-align: center;
+}
+
+.order-btn:hover {
+    transform: translateY(-2px);
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: 70vh;
