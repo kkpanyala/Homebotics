@@ -93,9 +93,9 @@ body {
     display: block;
     width: fit-content;
     margin: 2rem auto;
-    padding: 12px 22px;
+    padding: 24px 44px;
     font-family: "Michroma", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     background: linear-gradient(to top, var(--grey) 0%, transparent 100%);
     border: 2px solid #dadada;
     border-radius: 10px;
