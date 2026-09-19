@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebotics - Meet the Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --pink: #bf23ff;
+            --purple: #65029b;
+            --gold: #ab8a17;
+            --grey: #d4d1d1;
+        }
+
+        #home {
+            display: flex;
+            text-decoration: none;
+            font-family: "Michroma", sans-serif;
+            color: black;
+            padding-left: 2rem;
+            transition: .25s;
+        }
+
+        #home:hover {
+            cursor: default;
+        }
+
+        #home h1:hover {
+            transition: .25s;
+            cursor: pointer;
+            text-decoration: underline;
+            color: var(--pink);
+        }
+
+        .people {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin: 0 auto;
+            padding: 1rem 0 2rem;
+            max-width: 1200px;
+        }
+
+        .person {
+            display: flex;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            width: clamp(280px, 25vw, 90vw);
+            min-height: 50vh;
+            height: auto;
+            box-shadow: -5px 5px 20px var(--grey);
+            transition: .25s;
+        }
+
+        .person img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin-top: auto;
+        }
+
+        .person p {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .person > div {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2, h3, h4 {
+            font-family: "Michroma", sans-serif;
+            color: var(--gold);
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            border: none;
+            width: 100%;
+            min-height: auto;
+            margin-bottom: 1rem;
+            padding: 2rem 1rem 0.4rem;
+            transition: none;
+        }
+
+        .about h1 {
+            margin-bottom: 2rem;
+            font-family: "Michroma", sans-serif;
+            color: var(--purple);
+        }
+
+        .about h3 {
+            font-family: "Michroma", sans-serif;
+            margin-bottom: 1.1rem;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #222;
+            margin-bottom: 1.25rem;
+        }
+
+        .about:hover {
+            box-shadow: 0 0 0 black;
+        }
+
+        .about button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            background: linear-gradient(to top, var(--grey) 0%, transparent 100%);
+            border-bottom: 2px solid #dadada;
+            font-family: "Michroma", sans-serif;
+            border-radius: 10px;
+            color: grey;
+            font-weight: bolder;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 1.5rem 1rem 2rem;
+                min-height: auto;
+            }
+
+            .about div {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .about h1 {
+                font-size: 2rem;
+            }
+
+            .about h3,
+            .about h4,
+            .about p {
+                text-align: left;
+            }
+
+            .people {
+                gap: 1rem;
+                padding: 0.5rem 0 2rem;
+            }
+
+            .person {
+                width: 100%;
+                min-height: auto;
+            }
+
+            .person > div {
+                gap: 1rem;
+            }
+
+            .person img {
+                width: 100%;
+                max-height: 240px;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home"><h1>Homebotics</h1></a>
+    <div class="policy-container">
+        <section class="about">
+            <div>
+                <h1>About Homebotics</h1>
+                <p>Homebotics is a technology company that is focused on designing and developing commercially viable humanoid robots for household and domestic assistance. Homebotic’s main product is a safe, reliable, and human-oriented humanoid robot that can perform day-to-day activities in an average home, like helping with cleaning, cooking healthy, chef-level meals, retrieving items, doing the laundry, and other routine household tasks.</p>
+                <h3>The Spark: Reclaiming the Modern Day</h3>
+                <p>Every day, millions of hours are quietly lost to scrubbing floors, folding laundry, preparing meals, tracking down costly technicians, and worrying about the safety of our homes.</p>
+                <p>We live in an era of digital innovation, yet our physical lives remain anchored to tedious and repetitive chores.</p>
+                <p>Having spent years analyzing established global businesses, we recognized a massive, unaddressed gap in the market. Humanoid robotics existed in research labs but were not practical, nor were they accessible to the average household.</p>
+                <h4><p style="font-style: italic;">What if we could build an intelligent, safe, and truly affordable humanoid robots that give families their lives back?</p></h4>
+                <p>Homebotics is more thna just a hardware company; it is a life-changing ecosystem. Through tailored monthly subscription packages, you can customize exactly what modules your robot learns. Whether you need a culinary chef today or a laundry specialist tomrrow, Homebotics has you covered.</p>
+                <p>Your time is your most valuable asset, and our top priority. Let us give it back to you. Welcome to Homebotics.</p>
+                <button onclick="scrollToTabs(event)">View The Team</button>
+            </div>
+        </section>
+    </div>
+
+    <main class="people">
+        <section class="person" id="arg" data-aos="fade-up">
+            <div>
+                <h2>Arghya Rath</h2>
+                <h4>Role: CEO</h4>
+                <p>He is responsible for making executive decisions that align with company goals. These would be decisions that relate to strategy, management, and the direction of our company.</p><br/>
+                <p>Email: <a href="mailto:arath27@mhrd.org">arath27@mhrd.org</a></p>
+                <img src="images/people/arg.jpg" alt="Arghya Rath">
+            </div>
+        </section>
+        <section class="person" id="om" data-aos="fade-up">
+            <div>
+                <h2>Om Dagadgunde</h2>
+                <h4>Role: CTO</h4>
+                <p>He is responsible for innovating and product development for our humanoid robots. Furthermore, will be responsible for leading the AI/ML development team in creating smart, safe, and reliable algorithms while ensuring compliance with ethical standards and regulation.</p><br/>
+                <p>Email: <a href="mailto:odagadgunde27@mhrd.org">odagadgunde27@mhrd.org</a></p>
+                <img src="images/people/om.JPEG" alt="Om Dagadgunde">
+            </div>
+        </section>
+        <section class="person" id="yj" data-aos="fade-up">
+            <div>
+                <h2>Yashraj Iyer</h2>
+                <h4>Role: CFO</h4>
+                <p>He is Responsible for overseeing the company's entire financial health, managing financial planning, risk, reporting, and cash flow, while also serving as strategic advisor to the CEO and board on growth, investments, and operational efficiency, ensuring compliance and leading finance teams.</p><br/>
+                <p>Email: <a href="mailto:yiyer27@mhrd.org">yiyer27@mhrd.org</a></p>
+                <img src="images/people/yj.jpg" alt="Yashraj Iyer">
+            </div>
+        </section>
+        <section class="person" id="kp" data-aos="fade-up">
+            <div>
+                <h2>Krishna Kaushik Panyala</h2>
+                <h4>Role: CLO</h4>
+                <p>He is responsible for setting the company’s overall direction and making high‑level decisions that guide its future. He ensures the organization aligns its legal strategy with broader business goals and that it follows all required regulations. He also leads the executive team and represents the company to investors, partners, and the public.</p><br/>
+                <p>Email: <a href="mailto:kpanyala27@mhrd.org">kpanyala27@mhrd.org</a></p>
+                <img src="images/people/kp.png" alt="Krishna Kaushik Panyala">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/BigLogo.png" alt="logo">
+        <p>&copy; 2026 Homebotics. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="privpol.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p style="font-size: 15pt; margin-top: 2rem;"><b>This site is for educational purposes only.</b></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true,
+                offset: 200,
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true,
+                offset: 200,
+            });
+        });
+
+        function scrollToTabs(event) {
+            document.querySelector('.people').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
